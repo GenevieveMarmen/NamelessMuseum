@@ -1,0 +1,200 @@
+main{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing:0 ;
+    border-top: 1px solid #000;
+}
+
+td, th {
+  border: 1px solid #000;
+  white-space: nowrap;
+  border-top-width: 0px;
+  text-align: center;
+}
+
+div .table{
+  width: 350px;
+  overflow-x: scroll;
+  overflow-y: visible;
+  padding: 0;
+  /* margin: 15px; */
+  margin:auto;
+}
+
+table thead tr, .levels{
+    background-color: #d8ba43;
+    font-weight: bold;
+}
+
+#border-1{
+   margin: 15px 20px 10px 20px;
+}
+
+#border-1 hr{
+    border-top: 2px solid #d8ba43;
+}
+
+#woman{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    border: 3px  saddlebrown;
+}
+
+#figcaption{
+    border: 1px solid saddlebrown;
+    grid-row: 6;
+    text-align: center;
+    font-size: x-small;
+    margin: 5px 50px 0 50px;
+}
+
+/*section for tablets*/
+@media only screen and (min-width: 600px) {
+    div .table{
+        width: 90%;
+        margin: 0 0 0 20px;
+    }
+
+    #border-1{
+        margin-top: 25px;
+        margin-right: 35px;
+    }
+
+    ol li{
+        margin-left: 45px;
+    }
+
+    #figcaption{
+        margin: 10px 150px 0 150px;
+    }
+
+    #disclaimer{
+        margin-left: 15px;
+    }
+}
+
+
+/*section for tablet landscape*/
+@media only screen and (min-width: 768px) {
+    div .table{
+        width: 80%;
+        margin: 0 5px 0 20px;
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+
+    #border-1{
+        margin-top: 25px;
+        margin-right: 20px;
+    }
+
+    ol li{
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+
+    #figcaption{
+        margin: 10px 230px 0 230px;
+    }
+}
+
+/*section for laptops*/
+@media only screen and (min-width: 1024px) {
+    main{
+        background-color: antiquewhite;
+        display: grid;
+        grid-template-columns: 25px 1fr 1fr 25px;
+    }
+
+    h2{
+        font-size: 30px;
+        grid-column: span 4;
+        grid-row: 1;
+    }
+
+    div .table{
+      grid-column-start: 2;
+      grid-column-end: 4;
+      width: fit-content;
+      height: fit-content;
+      margin-left:auto;
+      margin-right: auto;
+    
+    }
+
+    th, td{
+        width: fit-content;
+        height: 40px;
+    }
+
+    tr td{
+        padding: 0 10px 0 10px;
+    }
+
+    th{
+        padding: 0 10px 0 10px;
+        font-size: medium;
+    }
+    
+    #border-1{
+        grid-row: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    #border-1 hr{
+        border-top: 2px solid #d8ba43;
+    }
+
+    #membership {
+       grid-row: 4;
+       grid-column-start: 2;
+    }
+
+    #membership h2{
+        display: block;
+        width:fit-content;
+        padding: 15px;
+    }
+
+    #membership ol{
+       padding: 15px;
+      
+    }
+
+    #woman{
+        grid-row: 4;
+        grid-column-start: 3;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #figcaption{
+        grid-row: 5;
+        grid-column-start: 3;
+        width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #disclaimer{
+        grid-row: 6;
+        grid-column-start: 2;
+    }
+}

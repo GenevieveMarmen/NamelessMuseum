@@ -1,0 +1,396 @@
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+body {
+    margin: 0;
+}
+
+
+/*Header section*/
+header {
+    background-color: black;
+    font-size: small;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+header>a {
+    grid-column: 2;
+}
+
+header>a>img {
+    width: 120px;
+    height: 120px;
+    margin: 10px 0 10px 0;
+}
+
+
+header nav {
+    grid-row: 2;
+    grid-column: span 3;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: fit-content;
+
+    color: white;
+    text-decoration: none;
+}
+
+header nav a {
+    margin: 5px 5px 0 5px;
+    font-size: small;
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: bisque;
+}
+
+#line-1 {
+    margin: 0 15px 5px 15px;
+    grid-row: 3;
+    grid-column: span 3;
+}
+
+.buttonHeader {
+    grid-row: 4;
+    grid-column: 3;
+    font-size: x-small;
+    width: fit-content;
+    height: 30px;
+    margin: 5px 35px 15px 0;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    display: inline-block;
+    line-height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.buttonHeader:before {
+    background-color: bisque;
+    border-radius: 10px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+.buttonHeader:hover:before {
+    top: 0;
+}
+
+.buttonHeader:hover {
+    color: black;
+    transition: 0.25s;
+}
+
+.buttonHeader:after {
+    position: absolute;
+    right: 2.34375rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(50%);
+    -ms-transform: translateY(-50%) translateX(50%);
+    transform: translateY(-50%) translateX(50%);
+    font-size: 1.75em;
+}
+
+#language {
+    grid-row: 4;
+    grid-column: 3;
+    background-color: black;
+    color: white;
+    height: fit-content;
+    width: 40px;
+    margin: 11px 15px 5px 75px;
+}
+
+#line-2 {
+    display: none;
+}
+
+/*Footer section*/
+footer {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer #about,
+#hours,
+#contact {
+    margin: 5px 15px 5px 15px;
+    border-bottom: 1px solid grey;
+}
+
+#contact a {
+    color: bisque;
+}
+
+footer #about p,
+#hours p,
+#contact p {
+    margin-left: 30px;
+}
+
+#copyright {
+    margin-left: auto;
+    margin-right: 20px;
+    font-size: x-small;
+}
+
+/*section for tablets*/
+@media only screen and (min-width: 600px) {
+
+    /*Header section*/
+    header {
+        font-size: small;
+    }
+
+    header>a {
+        grid-column: 2;
+        margin: 5px auto 0 auto;
+    }
+
+    header>a>img {
+        width: 120px;
+        height: 120px;
+        margin: 8px 0 -5px 0;
+    }
+
+    header nav {
+        margin: 15px 15px 5px 10px;
+    }
+
+    header nav a {
+        font-size: medium;
+        margin: 15px 15px 5px 15px;
+    }
+
+    #line-1 {
+        grid-column: span 4;
+
+    }
+
+    .buttonHeader {
+        width: fit-content;
+        margin: 0 15px 10px 40px;
+    }
+
+
+    #language {
+        margin: 5px 25px 10px auto;
+    }
+
+    /*Footer section*/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer #about,
+    #hours,
+    #contact {
+        margin: 5px 15px 5px 15px;
+        border-bottom: none;
+    }
+
+    footer #about p,
+    #hours p,
+    #contact p {
+        margin-left: 10px;
+    }
+
+    #line-2 {
+        display: inline;
+        grid-row: 2;
+        grid-column: span 3;
+    }
+
+    #copyright {
+        grid-row: 3;
+        grid-column: span 3;
+    }
+
+}
+
+/*section for tablet landscape*/
+@media only screen and (min-width: 768px) {
+
+    header nav a {
+        font-size: medium;
+        margin: 15px 25px 5px 25px;
+    }
+
+    .buttonHeader {
+        width: fit-content;
+        margin: 0 0 10px 100px;
+    }
+
+    footer #about {
+        margin: 5px 5px 5px 35px;
+    }
+
+    #hours {
+        margin: 5px 25px 5px 0;
+    }
+
+    #contact {
+        margin: 5px 25px 5px 25px;
+    }
+
+    footer #about p,
+    #hours p,
+    #contact p {
+        margin-left: 0;
+    }
+}
+
+/*section for laptops*/
+@media only screen and (min-width: 1024px) {
+
+    /*Header section*/
+    header {
+        padding: 15px;
+        grid-template-columns: 10% 6fr 10%;
+    }
+
+    header>a {
+        grid-row: 1;
+        grid-column: 1;
+        margin: 0 0 0 10px;
+    }
+
+    header>a>img {
+        width: 100px;
+        height: 100px;
+        margin: 0 0 0 0;
+    }
+
+    header nav {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 45px 40px 0 40px;
+    }
+
+    header nav a {
+        font-size: medium;
+        margin: 25px 40px 0 25px;
+    }
+
+    #line-1 {
+        grid-row: 2;
+        grid-column: 2;
+        margin: 0 40px 0 60px;
+    }
+
+    .buttonHeader {
+        grid-row: 1;
+        grid-column: 3;
+        width: 90px;
+        height: 35px;
+        font-size: small;
+        margin: 5px 0 0 10px;
+    }
+
+
+    #language {
+        margin: 0 0 0 auto;
+    }
+
+    /*Footer section*/
+    footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    #about {
+        padding-left: 10px;
+    }
+
+    #hours {
+        border-left: 2px solid gray;
+        padding-left: 60px;
+    }
+
+    #contact {
+        padding-left: 2px;
+    }
+
+
+    footer h3 {
+        margin-left: 0;
+    }
+
+    footer #about p,
+    #hours p,
+    #contact p {
+        margin-left: 20px;
+    }
+
+    #line-2 {
+        padding: 0 15px 0 15px;
+        height: 2px;
+        grid-column: span 3;
+    }
+
+    #copyright {
+        grid-row: 3;
+        grid-column: span 3;
+        font-size: small;
+        margin-top: 5px;
+    }
+
+    /*addition*/
+    header a {
+        grid-column-start: 1;
+    }
+
+    header {
+
+        min-height: 100px;
+    }
+
+    header nav {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 0 40px 0 40px;
+    }
+
+    header img {
+        display: block;
+    }
+
+    header img {
+        position: absolute;
+        max-width: 103px;
+        padding-left: 40px;
+        margin: 0 auto 0 auto;
+    }
+
+    a:hover img {
+        transform: scale(1.1);
+    }
+
+}

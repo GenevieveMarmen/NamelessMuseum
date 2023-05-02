@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plan your visit to the Nameless Museum">
+    <meta name="author" content="Sara Poquet, Genevieve Moisan-Marmen, William Travis Barfoot">
+    <meta name="keywords" content="museum, visit, Nameless Museum">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <title>Plan Your Visit!</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/visit.css">
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="home.html"><img src="images/Logo.jpg" alt="NMFA Logo"></a>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="planYourVisit.html">Plan your visit</a>
+                <a href="exhibits.html">Exhibits</a>
+                <a href="becomeMember.html">Become a member</a>
+                <a href="about.html">About</a>
+            </nav>
+            <button class="buttonHeader" onclick="window.location.href='ticketing.html';">Buy Tickets</button>
+            <div id="line-1">
+                <hr>
+            </div>
+
+            <select title="language" name="language" id="language" onchange="location = this.value;">
+                <option selected="selected" value="planYourVisit.html">En</option>
+                <option value="frenchHTML/votreVisite.html">Fr</option>
+            </select>
+        </header>
+
+
+        <main>
+            <div id="text">
+                <div id="textwrapper">
+                    <h1>Plan Your Next Visit!</h1>
+                    <p>We would love to have you as a guest! You'll find our location
+                        on the displayed map. Hour hours of operation are just below.
+                        Still have a question? No problem! email John for a quick answer! </p>
+                </div>
+            </div>
+            <div id="gmaps">
+                <iframe title="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2856.0693396053352!2d-78.33253518509535!3d44.28796281917114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d58d025703f8e7%3A0x32da16f55af9d676!2sThe%20Canadian%20Canoe%20Museum!5e0!3m2!1sen!2sca!4v1670455696747!5m2!1sen!2sca"
+                    height="300" style="border:solid 3px; border-radius:20px;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="ophours">
+                <h2>Hours of Operation</h2>
+                <ul style="list-style-type: none;">
+                    <li><b>Monday</b></li>
+                    <li>
+                        <ul>
+                            <li>10:00 - 21:00</li>
+                        </ul>
+                    </li>
+
+                    <li><b>Tuesday</b></li>
+                    <li>
+                        <ul>
+                            <li>10:00 - 21:00</li>
+                        </ul>
+                    </li>
+                    <li><b>Wednesday</b></li>
+                    <li>
+                        <ul>
+                            <li>10:00 - 21:00</li>
+                        </ul>
+                    </li>
+                    <li><b>Thursday</b></li>
+                    <li>
+                        <ul>
+                            <li>10:00 - 21:00</li>
+                        </ul>
+                    </li>
+                    <li><b>Friday</b></li>
+                    <li>
+                        <ul>
+                            <li>10:00 - 21:00</li>
+                        </ul>
+                    </li>
+                    <li><b>Saturday</b></li>
+                    <li> <ul>
+                        <li>10:00 - 17:00</li>
+                    </ul></li>
+                    <li><b>Sunday</b></li>
+                    <li>  <ul>
+                        <li>10:00 - 17:00</li>
+                    </ul></li>
+                </ul>
+            </div>
+            <div id="contactus">
+                <h2>Still Have Questions?</h2>
+                <p>For any additional questions, please contact John night or day.
+                    He's always ready to answer! </p>
+                <address>
+                    Email Contact <a href="mailto:namelessArt@nameless.ca">John Smith</a>.<br>
+                    Or:<br>
+                    Nameless Museum<br>
+                    910 Monaghan Rd<br>
+                    Peterborouugh, K9J 5K4<br>
+                    Ontario, Canada
+                </address>
+            </div>
+
+            <div id="funded">
+                <form action="https://www.canada.ca/en/canadian-heritage/services/funding/museums-assistance.html"
+                    target="_blank">
+                    <input type="submit" value="Supported by: Museum Assistance Canada. Visit them Here!">
+                </form>
+            </div>
+            <div id="videowrapper">
+
+                <video id="thevideo" autoplay muted loop>
+                    <source src="images/Travis/video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </main>
+
+
+        <footer>
+            <div id="about">
+                <h3>Address</h3>
+                <p>910 Monaghan Rd <br>
+                    Peterborouugh, Ontario <br>
+                    K9J 5K4, Canada</p>
+            </div>
+            <div id="hours">
+                <h3>Opening hours</h3>
+                <p>Monday to Friday 10am - 9pm <br>
+                    Saturday and Sunday 10am - 5pm</p>
+            </div>
+            <div id="contact">
+                <h3>Contact</h3>
+                <p>(750) 748-9153 <br>
+                    <a href="mailto:namelessArt@nameless.ca">namelessArt@nameless.ca</a>
+                </p>
+            </div>
+            <div id="line-2">
+                <hr>
+            </div>
+            <div id="copyright">
+                <p> &#169; Copyright The Nameless Museum of Fine Arts. All rights reserved </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

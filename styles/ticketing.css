@@ -1,0 +1,199 @@
+main {
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+main h3 {
+    margin-left: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main p {
+    margin: 5px 0 10px 15px;
+}
+
+fieldset {
+    margin: 10px 5px 10px 5px;
+}
+legend{
+    font-weight: bold;
+}
+
+#information input {
+    margin-right: 15px;
+}
+
+.inputcell {
+    display: flex;
+    gap: 15px;
+}
+
+
+.outcell input {
+    display: flex;
+    width: 35px;
+}
+
+.num {
+    text-align: center;
+    margin-left: 70px;
+}
+
+#purchaseButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#purchase {
+    font-size: medium;
+    font-weight: bold;
+    width: fit-content;
+    margin: 10px 0 10px 0;
+    height: 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    z-index: 0;
+}
+
+#purchase:before {
+    border-radius: 10px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+#purchase:hover:before {
+    top: 0;
+}
+
+#purchase:hover {
+    background-color: black;
+    color: bisque;
+    transition: 0.25s;
+}
+
+#purchase:after {
+    position: absolute;
+    right: 2.34375rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(50%);
+    -ms-transform: translateY(-50%) translateX(50%);
+    transform: translateY(-50%) translateX(50%);
+    font-size: 1.75em;
+}
+
+/*section for tablets*/
+@media only screen and (min-width: 600px) {
+
+    main h3 {
+        margin-left: 25px;
+    }
+
+    main p {
+        margin: 5px 0 10px 55px;
+    }
+
+    table {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    fieldset {
+        margin: 10px 75px 10px 75px;
+    }
+}
+
+/*section for tablet landscape*/
+@media only screen and (min-width: 768px) {
+
+    fieldset {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*section for laptops*/
+@media only screen and (min-width: 1024px) {
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    h2 {
+        grid-row: 1;
+        grid-column: span 4;
+    }
+
+    #genAdm {
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 500px;
+        margin-left: 100px;
+    }
+
+    #extras {
+        grid-row: 2;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        width: 500px;
+        margin-left: 100px;
+    }
+
+    #ticketForm {
+        grid-row: 3;
+        grid-column-start: 1;
+        grid-column: span 4;
+    }
+
+    #ticket {
+        grid-column: span 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 15px 0 5px;
+        padding-left: 8px;
+    }
+
+    #ticketForm h2 {
+        grid-column: span 4;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    fieldset {
+        width: fit-content;
+        margin: 0 5px 0 5px;
+    }
+
+    #information {
+        padding: 20px;
+    }
+
+    #purchaseButton {
+        grid-row: 4;
+        grid-column: span 4;
+        margin-bottom: 15px;
+    }
+}

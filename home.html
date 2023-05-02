@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sara Poquet, Genevieve Moisan-Marmen, William Travis Barefoot">
+    <meta name="keywords" content="museum, art, Peterborough">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>The Nameless Museum of Fine Art</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/home.css"> 
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="home.html"><img src="images/Logo.jpg" alt="NMFA Logo"></a>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="planYourVisit.html">Plan your visit</a>
+                <a href="exhibits.html">Exhibits</a>
+                <a href="becomeMember.html">Become a member</a>
+                <a href="about.html">About</a>
+            </nav>
+                <button class="buttonHeader" onclick="window.location.href='ticketing.html';">Buy Tickets</button>
+            <div id="line-1">
+                <hr>
+            </div>
+            <select title="language" name="language" id="language" onchange="location = this.value;">
+                <option selected="selected" value="home.html">En</option>
+                <option value="frenchHTML/accueil.html">Fr</option>
+            </select>
+            
+        </header>
+
+        <main>
+            <div id="homevideo">
+                <video controls loop autoplay muted>
+                    <source src="images/homevideologo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div> 
+            
+            <div id="home-this-week-header">
+                <h2>This Week at the Museum:</h2>
+            </div>
+
+            <div id="thisweek">
+                <figure class="homepage-exhibit-card">
+                    <img class="exhibit-card" src="images/ExhibitCover1.jpg" alt="The Art of Coffee">
+                    <figcaption class="home-ex-card-text">The Art of Coffee<br>
+                        Until 19 December, 2022</figcaption>
+                </figure>
+                
+                <figure class="homepage-exhibit-card">
+                    <img class="exhibit-card" src="images/ExhibitCover2.jpg" alt="Fruit and Flowers: A Retrospective">
+                    <figcaption class="home-ex-card-text">Fruit and Flowers: A Retrospective<br>
+                        Until 2 July, 2023</figcaption>
+                    </figure>
+                
+                <figure class="homepage-exhibit-card">
+                    <img class="exhibit-card" src="images/ExhibitCover7.jpg" alt="Rain: The Permanent Collection">
+                    <figcaption class="home-ex-card-text">Rain: The Permanent Collection</figcaption>
+                </figure>
+            </div>
+
+            <div class="home-ex-link">
+                <button id="all-exhibits" onclick="window.location.href='exhibits.html'">See all exhibits...</button>
+            </div>
+        </main>
+
+    
+        <footer>
+            <div id="about">
+                <h3>Address</h3>
+                <p>910 Monaghan Rd <br>
+                    Peterborough, Ontario <br>
+                    K9J 5K4, Canada</p>
+            </div>
+            <div id="hours">
+                <h3>Opening hours</h3>
+                <p>Monday to Friday 10am - 9pm <br>
+                    Saturday and Sunday 10am - 5pm</p>
+            </div>
+            <div id="contact">
+                <h3>Contact</h3>
+                <p>(750) 748-9153 <br>
+                    <a href="mailto:namelessArt@nameless.ca">namelessArt@nameless.ca</a>
+                </p>
+            </div>
+            <div id="line-2">
+                <hr>
+            </div>
+            <div id="copyright">
+                <p> &#169; Copyright The Nameless Museum of Fine Arts. All rights reserved </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

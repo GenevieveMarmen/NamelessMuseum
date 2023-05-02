@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How to buy tickets for at The Nameless Museum">
+    <meta name="author" content="Sara Poquet, Genevieve Moisan-Marmen, William Travis Barefoot">
+    <meta name="keywords" content="museum, art, Peterborough">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/ticketing.css">
+    <script src="scripts/museum.js"></script>
+    <title>Ticketing</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="home.html"><img src="images/Logo.jpg" alt="NMFA Logo"></a>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="planYourVisit.html">Plan your visit</a>
+                <a href="exhibits.html">Exhibits</a>
+                <a href="becomeMember.html">Become a member</a>
+                <a href="about.html">About</a>
+            </nav>
+            <button class="buttonHeader" onclick="window.location.href='ticketing.html';">Buy Tickets</button>
+            <div id="line-1">
+                <hr>
+            </div>
+            <select title="language" name="language" id="language" onchange="location = this.value;">
+                <option selected="selected" value="ticketing.html">En</option>
+                <option value="frenchHTML/billeterie.html">Fr</option>
+                
+            </select>
+        </header>
+
+        <main>
+            <h2>Admission Tickets</h2>
+            <div id="genAdm">
+                <h3>General Admission</h3>
+                <p>Adults 25$, seniors and students 15$, under 5 free. </p>
+                <p>Tickets are valid for all exhibits.</p>
+                <p>For large groups and special request please contact us.</p>
+            </div>
+            <div id="extras">
+                <h3>Extras for purchase directly at museum</h3>
+                <p>Audio guide in 15 available languages $5.00.</p>
+                <p>Coat check and stroller rentals 2.50$.</p>
+                <p> Museum store and restaurant $$.</p>
+            </div>
+            <div id="ticketForm">
+                <div>
+                    <h2>Purchase your ticket below</h2>
+                </div>
+                <form id="ticket" method="post" onsubmit="return ticketPurchased();">
+                    <!--Visitor personal information-->
+
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        <table id="information">
+                            <tr>
+                                <td>
+                                    <label for="first_name">First Name:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="first_name" size="20" maxlength="20">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="last_name">Last Name:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="last_name" size="20" maxlength="20">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">Email Address:</label>
+                                </td>
+                                <td>
+                                    <input type="email" id="email" placeholder="email@gmail.com" size="20"
+                                        maxlength="30">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Ticket Details</legend>
+                        <table id="ticketDetails">
+                            <tr>
+                                <td class="inputcell">
+                                    <select title="ticketType" name="ticketType" id="ticketType" onchange="calculatePrice();">
+                                        <option value="0">Ticket type</option>
+                                        <option value="25.00">Adult ($25.00)</option>
+                                        <option value="15.00">Senior ($15.00)</option>
+                                        <option value="15.00">Student ($15.00)</option>
+                                        <option value="10.00">Children($10.00)</option>
+                                        <option value="0.00">Under 5 ($0.00)</option>
+                                    </select>
+
+                                    <select title="ticketQuantity" name="ticketQuantity" id="ticketQuantity" onchange="calculatePrice();">
+                                        <option value="0">Quantity</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                                <td class="outcell">
+                                    <input title="ticketPrice" class="num" name="ticketPrice" id="ticketPrice" size="4" value="0.00"
+                                        readonly="readonly">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="date_visit">Date of visit:</label>
+                                </td>
+                                <td>
+                                   
+                                    <input type="date"  id="date_visit" required>
+                                    <script>date_visit.min = new Date().toISOString().split("T")[0];</script>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="labelcell">Subtotal:</td>
+                                <td class="outcell">
+                                    <input title="txtSubtotal" class="num" name="txtSubtotal" id="txtSubtotal" size="4" value="0.00"
+                                        readonly="readonly">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="labelcell">Tax (15%):</td>
+                                <td class="outcell">
+                                    <input title="txtTax" class="num" name="txtTax" id="txtTax" size="4" value="0.00"
+                                        readonly="readonly">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="labelcell">TOTAL:</td>
+                                <td class="outcell">
+                                    <input title="txtTotal" class="num" name="txtTotal" id="txtTotal" size="4" value="0.00"
+                                        readonly="readonly">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Payment</legend>
+                        <table id="payment">
+                            <tr>
+                                <td>
+                                    <label>Card:</label>
+                                </td>
+                                <td id="radio">
+                                    <input type="radio" name="payment_method" id="visa" value="visa" required>
+                                    <label for="visa">Visa</label>
+                                    <br>
+                                    <input type="radio" name="payment_method" id="master_card" value="master_card">
+                                    <label for="master_card">Master Card</label>
+                                    <br>
+                                    <input type="radio" name="payment_method" id="american_express"
+                                        value="american_express">
+                                    <label for="american_express">American Express</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="labelcell">Name on card:</td>
+                                <td class="inputcell2">
+                                    <input title="cname" class="text" name="cname" id="cname" size="20">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="labelcell">Card Number:</td>
+                                <td class="inputcell2">
+                                    <input title="cnumber" class="text" name="cnumber" id="cnumber" size="2">
+                                    <span class="fieldlabel">Expiration:</span>
+                                    <select title="cmonth" name="cmonth" id="cmonth">
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                        <option>08</option>
+                                        <option>09</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                    /
+                                    <select title="cyear" name="cyear" id="cyear">
+                                        <option>2022</option>
+                                        <option>2023</option>
+                                        <option>2024</option>
+                                        <option>2025</option>
+                                        <option>2026</option>
+                                        <option>2027</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <div id="purchaseButton">
+                        <input type="submit" name="purchase" id="purchase" value="Purchase"
+                            onclick="return validateForm();">
+                    </div>
+
+                </form>
+            </div>
+        </main>
+
+
+        <footer>
+            <div id="about">
+                <h3>Address</h3>
+                <p>910 Monaghan Rd <br>
+                    Peterborough, Ontario <br>
+                    K9J 5K4, Canada</p>
+            </div>
+            <div id="hours">
+                <h3>Opening hours</h3>
+                <p>Monday to Friday 10am - 9pm <br>
+                    Saturday and Sunday 10am - 5pm</p>
+            </div>
+            <div id="contact">
+                <h3>Contact</h3>
+                <p>(750) 748-9153 <br>
+                    <a href="mailto:namelessArt@nameless.ca">namelessArt@nameless.ca</a>
+                </p>
+            </div>
+            <div id="line-2">
+                <hr>
+            </div>
+            <div id="copyright">
+                <p> &#169; Copyright The Nameless Museum of Fine Arts. All rights reserved </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
