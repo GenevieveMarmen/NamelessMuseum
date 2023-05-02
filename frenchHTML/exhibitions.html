@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sara Poquet, Genevieve Moisan-Marmen, William Travis Barefoot">
+    <meta name="keywords" content="musée, arts, Peterborough">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/exhibits.css">
+    <title>Exhibitions</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="accueil.html"><img src="../images/Logo.jpg" alt="NMFA Logo"></a>
+            <nav>
+                <a href="accueil.html">Accueil</a>
+                <a href="votreVisite.html">Planifiez votre visite</a>
+                <a href="exhibitions.html">Exhibitions</a>
+                <a href="devenirMembre.html">Devenez membre</a>
+                <a href="ÀPropos.html">À propos</a>
+            </nav>
+                <button class="buttonHeader" onclick="window.location.href='billeterie.html';">Billets</button>
+            <div id="line-1">
+                <hr>
+            </div>
+            <select title="language" name="language" id="language" onchange="location = this.value;">
+                <option selected="selected" value="exhibits.html">Fr</option>
+                <option value="../exhibits.html">En</option>
+            </select>
+           
+        </header>
+
+        <main>
+            <!-- Header row with navigation submenu -->
+            <div class="exHeader">
+                <h2 class="exH2">Exhibitions</h2>
+            </div>
+            
+            <div class="exSubnav">
+                <ul class="exhibit-tabs" id="exhibit-tabs">
+                    <li class="exTab active"><button id="tabCurrent">Exhibitions en cours</button></li>
+                    <li class="exTab"><button id="tabUpcoming">Exhibitions à venir</button></li>
+                    <li class="exTab"><button id="tabPast">Exhibitions passées</button></li>
+                    <li class="exTab"><button id="tabPermanent">Collection permanente</button></li>
+                </ul>
+            </div>
+            
+            <!-- Current Exhibits Tab Content -->
+            <div id="current-exhibits" style="display:contents;">
+
+                <!-- Exhibit Row 1 -->
+                <div class="exhibitIMG">
+                    <img class="exhibitcover" src="../images/ExhibitCover1.jpg" alt="Exhibition image pour café">
+                </div>
+                
+                <div class="exhibitTXT">
+                    <h3 class="exH3">L'art du café</h3>
+                    <h4 class="exH4">Jusqu'au 19 décembre 2022</h4>
+                    <h4 class="exH4">À propos de cette exposition:</h4>
+                    <p class="exP">Le café, c'est bien plus qu'une boisson chaude ou un moyen de se réveiller le matin. La riche histoire culturelle du café a traversé les siècles et les continents, de la chaleur de l'équateur aux climats nordiques les plus rigoureux.</p>
+                    <p class="exP">L'exposition L'art du café rassemble des œuvres d'art qui capturent la belle et parfois douloureuse histoire du café, depuis ses racines jusqu'à votre tasse.</p>
+                    <p class="exP">Cette exposition fait partie de nos festivités saisonnières Les merveilles d'hiver au Nameless Museum of Fine Arts. Notre café sert une sélection mondiale de préparations de café afin que vous puissiez profiter de l'art, puis se rechauffer avec un café !</p>
+                </div>
+
+                <!-- Thumbnail row 1 -->
+                <div class="exTHUMBS">
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/peasant.jpg" alt='Jeune paysanne prenant son café, 1881, Camille Pissarro (français)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/sevrescoffee1.jpg" alt='Service à café partiel (Déjeuner "Culture et Récolte du cacao"), 1836, Manufacture de Sèvres (français)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/70scoffee.jpg" alt="Service à café Circa '70, Donald Colflesh, 1958-1960 (américain)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/coffeevendor.jpg" alt="Vendeur de café, 1746, Anne Claud Philippe de Tubières, comte de Caylus, Etienne Fessard, après Edme Bouchardon (français)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/coffeedish.jpg" alt="La femme prenant le café, 1774, Louis Marin Bonnet (français)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/fortuneteller.jpg" alt="La diseuse de bonne aventure sur la coulée du marc de café, d'après une conception originale à Vauxhall Gardens, 1748-60, d'après Francis Hayman, éditeur Robert Sayer (britannique)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/sevrescoffee2.jpg" alt="Service à café et à thé (déjeuner chinois réticulé), 1885-61, Manufacture de Sèvres, Hyacinthe Régnier (français)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/thecafe.jpg" alt="Le Café, 1840, Fançois-Joseph-Aimé de Lemud, éditeur Rittner &amp; Goupille (français)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/pigs.jpg" alt="Service à thé et café, 1907, Carlo Bugatti (italien)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/cafesinger.jpg" alt="Café Singer, 1879, Edgar Degas (français)">
+                    </div>
+                </div>
+            
+                <!-- Exhibit Row 2 - Current -->
+                <div class="exhibitIMG-row2">
+                    <img class="exhibitcover" src="../images/ExhibitCover4.jpg" alt="Exhibition image pour fruits et fleurs">
+                </div>
+
+                <div class="exhibitTXT-row2">
+                    <h3 class="exH3">Des fruits et des fleurs: une rétrospective</h3>
+                    <h4 class="exH4">Jusqu'au 2 juillet 2023</h4>
+                    <h4 class="exH4">À propos de cette exposition:</h4>
+                    <p class="exP">Tout au long de l'histoire, les fruits et les fleurs ont occupé une place prépondérante dans la mythologie de l'humanité. Des premiers textes religieux aux SMS modernes, ils ont été des symboles de vie et de mort, d'abondance et de pauvreté, de beauté et de perte.</p>
+                     <p class="exP">Les Victoriens ont inventé un langage basé sur des fleurs. Des économies entières se sont construites autour de la richesse des fruits. Ils sont liés à notre histoire et bien sûr représentés dans nos œuvres d'art. L'exposition commence cet hiver et se poursuivra jusqu'au l'été. Offrez-vous le luxe coloré et l'histoire complexe de ces belles plantes.</p>
+                </div>
+
+                <!-- Thumbnail row 2 -->
+                <div class="exTHUMBS-row2">
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/flower1.jpg" alt='Paysage - Fruits et fleurs, 1862, Frances Flora Bond Palmer (américaine, née en Angleterre)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/flower2.jpg" alt='Nature morte à la théière et aux fruits, 1896, Paul Gauguin (français)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/flower3.jpg" alt="La Brioche, 1870, Edouard Manet (Français)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/flower4.jpg" alt="Nature morte aux fleurs et aux fruits, 1866, Henri Fantin-Latour (français)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/flower5.jpg" alt="Nature morte : fleurs et fruits, 1850-1855, Severin Roesen (américain)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/flower6.jpg" alt="Nature morte aux pommes et un pot de primevères, vers 1890, Paul Cézanne (français)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/flower7.jpg" alt="Asters et fruits sur une table, 1868, Henri Fantin-Latour (français)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/flower8.jpg" alt="Nature morte - Fleurs et fruits dans un bol blanc et rose, 1840-1860 (américain)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/flower9.jpg" alt="Nature morte aux fleurs et aux figues de Barbarie, vers 1885, Auguste Renoir (français)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/flower10.jpg" alt="Nature morte au vase de fleurs, melon, pêches et raisins, 1780, Charlotte Eustache Sophie de Fuligny Damas, marquise de Grollier (français)">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Past Exhibits Tab Content -->
+            <div id="past-exhibits" style="display:none;">
+
+                <!-- Exhibit Row 1 - Past -->
+                <div class="exhibitIMG">
+                    <img class="exhibitcover" src="../images/ExhibitCover2.jpg" alt="Exhibition image pour Canadian Landscapes">
+                </div>
+
+                <div class="exhibitTXT">
+                    <h3 class="exH3">D'un océan à l'autre : Paysages canadiens</h3>
+                    <h4 class="exH4">Du 15 mai au 20 août 2022</h4>
+                    <h4 class="exH4">À propos de cette exposition:</h4>
+                    <p class="exP">Quiconque connaît le Canada sait que c'est presque le plus grand pays, du moins géographiquement. Car la majorité de la population du Canada vit près de sa frontière sud, le pays conserve la beauté de son état naturel.</p>
+                     <p class="exP">D'un océan à l'autre : Paysages canadiens tente de capturer la richesse de la campagne. Au fil des ans, de nombreux artistes ont peint des monuments canadiens comme les chutes du Niagara. Cette exposition célèbre le Canada dans toute sa splendeur, une vaste étendue de caractéristiques naturelles qui s'étend de l'Atlantique au Pacifique en passant par l'océan Arctique.</p>
+                </div>
+
+                <!-- Thumbnail row 1 - Past -->
+                <div class="exTHUMBS" id="exTHUMBS">
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/can1.jpg" alt='Rocheuses canadiennes (lac Louise), vers 1889, Albert Bierstadt (américain)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/can2.jpg" alt='Le Wigwam, une scène canadienne à Penllergare, vers 1855, John Dillwyn Llewelyn (britannique, gallois)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/can3.jpg" alt="Paysage avec des vaches s'abreuvant dans un ruisseau, 1871, Robert S. Duncanson (américain)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/can4.jpg" alt="Les chutes du Niagara, vers 1825, Edward Hicks (américain)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/can5.jpg" alt="Derrière les dunes, lac Ontario, 1883-1887, Homer Dodge Martin (américain)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/can6.jpg" alt="Niagara Falls, vers 1888, George Barker (Américain, né au Canada)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/can7.jpg" alt="American Falls, Niagara, vers 1855, Jasper Francis Cropsey (américain)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/can8.jpg" alt="Sous les chutes du Niagara, 1862, Ferdinand Richardt (américain)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/can9.jpg" alt="Niagara Falls-Table Rock au clair de lune, 1811-1813, Pavel Petrovich Svinin (russe)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/can10.jpg" alt="Niagara Falls-Côté canadien au clair de lune, 1811-1813, Pavel Petrovich Svinin (russe)">
+                    </div>
+                </div>
+
+                <!-- Exhibit Row 2 - Past -->
+                <div class="exhibitIMG-row2">
+                    <img class="exhibitcover" src="../images/ExhibitCover3.jpg" alt="Exhibition image pour des moments difficiles">
+                </div>
+
+                <div class="exhibitTXT-row2">
+                    <h3 class="exH3">Moments difficiles à travers l'histoire</h3>
+                    <h4 class="exH4">Du 21 octobre 2021 au 20 avril 2022</h4>
+                    <h4 class="exH4">À propos de cette exposition:</h4>
+                    <p class="exP">Nous y avons tous été. Un moment, vous socialisez, profitez d'une belle journée au parc ou d'une soirée au café, et le suivant vous êtes plongé dans une situation socialement embarrassante digne de vos plus terribles cauchemars.</p>
+                     <p class="exP">Mais ces moments ne sont pas nouveaux. Moments difficiles à travers l'histoire est une exposition qui démontre la perpétuité des faux pas sociaux, des rires inopportuns, des tournures de phrases malheureuses et des réalisations inconfortables. En parcourant ces scènes capturées sur toile, vous pouvez vous réconforter en sachant que la maladresse, c'est éternelle.</p>
+                </div>
+
+                <!-- Thumbnail row 2 - Past -->
+                <div class="exTHUMBS-row2">
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/awk1.jpg" alt='La diseuse de bonne aventure, probablement années 1630, Georges de La Tour (français)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/awk2.jpg" alt='Esther devant Assuérus, XVIIe siècle, Artemisia Gentileschi (italien)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/awk3.jpg" alt="Les oies du frère Philippe, vers 1736, Nicolas Lancret (français)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/awk4.jpg" alt="Portrait équestre de Cornelis (1639-1680) et Michiel Pompe van Meerdervoort (1638-1653) avec leur tuteur et cocher, vers 1652-53, Aelbert Cuyp (néerlandais)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/awk5.jpg" alt="Surpris ou infidélité découverte, années 1700, Christian Wilhelm Ernst Dietrich (allemand)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/awk6.jpg" alt="Rebecca et le blessé Ivanhoé, 1823, Eugène Delacroix (français)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/awk7.jpg" alt="La Lettre, 1746, Pietro Longhi (Pietro Falca) (italien)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/awk8.jpg" alt="Thé, 1872, James Tissot (français)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/awk9.jpg" alt="Mezzetin, vers 1718-1720, Antoine Watteau (français)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/awk10.jpg" alt="Canotage, 1874, Edouard Manet (français)">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Exhibits Tab Content -->
+            <div id="upcoming-exhibits" style="display:none;">
+
+                <!-- Exhibit Row 1 - Upcoming -->
+                <div class="exhibitIMG">
+                    <img class="exhibitcover" src="../images/ExhibitCover5.jpg" alt="Exhibition image pour les bols">
+                </div>
+
+                <div class="exhibitTXT">
+                    <h3 class="exH3">Les bols</h3>
+                    <h4 class="exH4">À partir d'août 2023</h4>
+                    <h4 class="exH4">À propos de cette exposition:</h4>
+                    <p class="exP">Ainsi que la découverte du feu et de la roue, la création de bols pour conserver, servir et manger marque une des étapes vers l'établissement de la civilisation telle que nous la connaissons. Il est difficile d'exagérer l'importance de ces plaques courbes.</p>
+                     <p class="exP">À travers les continents et les civilisations aux origines très différentes, une chose commune à tous est l'utilisation de la poterie, de la pierre ou du bois pour créer des bols pour stocker la récolte, servir des membres de la communauté et l'exposer comme objets de beauté.</p>
+                     <p class="exP">Cette exposition explore l'histoire des bols : leurs fabricants, leurs matériaux, ainsi que la valeur de ces objets au fil du temps.</p>
+                </div>
+
+                <!-- Thumbnail row 1 - Upcoming -->
+                <div class="exTHUMBS">
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/bowl1.jpg" alt='Bol bleu, vers 1295-1070 av. J.-C. (Nouvel Empire, Ramesside)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/bowl2.jpg" alt='Bol, XIIe-XIIIe siècle (byzantin)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/bowl3.jpg" alt="Bol, vers 1897-1900, George E. Ohr (Américain)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/bowl4.jpg" alt="Bol, vers 1550-1295 av. J.-C. (Nouvel Empire)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/bowl5.jpg" alt="Bol, vers 1875-78, Venezia-Murano Company (italien)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/bowl6.jpg" alt="Bol, 664-332 av. J.-C. (période tardive)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/bowl7.jpg" alt="Bol, fin XIIIe-début XIVe siècle (iranien)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/bowl8.jpg" alt="Bol, 1903, Fernand Thesmar (français)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/bowl9.jpg" alt="Bol, vers 1887-1905, Willets Manufacturing Company (américaine)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/bowl10.jpg" alt="Bol, 1893-96, conçu par Louis Comfort Tiffany (américain)">
+                    </div>
+                </div>
+
+                <!-- Exhibit Row 2 - Upcoming -->
+                <div class="exhibitIMG-row2">
+                    <img class="exhibitcover" src="../images/ExhibitCover6.jpg" alt="Exhibition image pour courtepointe">
+                </div>
+
+                <div class="exhibitTXT-row2">
+                    <h3 class="exH3">Les courtepointes</h3>
+                    <h4 class="exH4">À partir de février 2023</h4>
+                    <h4 class="exH4">À propos de cette exposition:</h4>
+                    <p class="exP">De la courtepointe en flanelle la plus confortable faite par grand-mère, aux œuvres de haute couture accrochées dans les galeries d'art, les courtepointes font fureur. L'exposition Les courtepointes explore cette forme d'art, depuis ses humbles débuts économiques, à travers sa composition mathématique complexe, jusqu'à sa reconnaissance en tant que trésor culturel.</p>
+                     <p class="exP">Nos courtepointes retracent l'arc des premiers exemples japonais, de l'épargne coloniale américaine et des œuvres d'art modernes aptes à orner les murs. Lorsque vous ressentez le froid mordant de l'hiver, pensez à visiter notre exposition chaleureuse !</p>
+                </div>
+
+                <!-- Thumbnail row 2 - Upcoming -->
+                <div class="exTHUMBS-row2">
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/quilt1.jpg" alt='Courtepointe branches et vignes, vers 1875, Ernestine Eberhardt Zaumseil (Américaine)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/quilt2.jpg" alt='Courtepointe étoile de Bethléem, vers 1835, (américain)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/quilt3.jpg" alt="Courtepointe, motif hexagonal ou nid d'abeille, 1846, Rebecca Davis (américaine)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/quilt4.jpg" alt="Courtepointe des droits de la femme, vers 1875, Emma Civey Stahl (américaine)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/quilt5.jpg" alt="Courtepointe de chat, vers 1850, Inconnu">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/quilt6.jpg" alt="Courtepointe à treize patchs avec tissu de support japonais, vers 1886, Inconnu">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/quilt7.jpg" alt="Courtepointe picturale, 1832, Euphemia Kichlein (américaine)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/quilt8.jpg" alt="Tulip Quilt, vers 1850-80, (américain)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/quilt9.jpg" alt="Courtepointe folle, vers 1880-1900, Inconnu">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/quilt10.jpg" alt="Courtepointe d'appliques florales, vers 1850, Emeline Travis Ludington (américaine)">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Permanent Collection Exhibit Tab Content -->
+            <div id="permanent-collection" style="display:none;">
+
+                <!-- Exhibit Row 1 - Permanent -->
+                <div class="exhibitIMG">
+                    <img class="exhibitcover" src="../images/ExhibitCover7.jpg" alt="Exhibition image pour la pluie">
+                </div>
+
+                <div class="exhibitTXT">
+                    <h3 class="exH3">La pluie</h3>
+                    <h4 class="exH4">À propos de cette exposition:</h4>
+                    <p class="exP">Le cycle de l'eau n'est jamais loin des pensées de toute créature sur cette planète. Essentielle à la vie sur terre, l'eau est une compagne précieuse et constante, vivifiante et purifiante.</p>
+                     <p class="exP">L'eau a aussi ses inconvénients - oui, on parle bien des averses ! Les orages torrentiels ont joué leur rôle dans la formation de l'humanité. Bien que la pluie soit un cadeau qui permet à la nourriture de pousser, elle peut avoir un effet féroce sur le paysage, découpant les flancs des montagnes, inondant les plaines et remplissant chaque crevasse des rues de la ville avec des flaques prêtes à éclabousser.</p>
+                     <p class="exP">L'exposition La pluie célèbre la chute d'eau du ciel dans toute sa beauté et son agonie. Ça vaut le détour, qu'il pleuve ou qu'il fait beau !</p>
+                </div>
+
+                <!-- Thumbnail row 1 - Permanent Collection -->
+                <div class="exTHUMBS">
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/rain1.jpg" alt='Changement de pâturage, vers 1880, Anton Mauve (néerlandais)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/rain2.jpg" alt='Ono no Komachi, Prier pour la pluie, vers 1791, Chōbunsai Eishi (japonais)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/rain3.jpg" alt='La vie de Nichiren : la prière pour la pluie exaucée, vers 1835, Utagawa Kuniyoshi (japonais)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/rain4.jpg" alt='Pluie torentielle - Cidrerie à Redding, Connecticut, vers 1840, George Harvey (américain)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/rain5.jpg" alt="Krishna et les Gopis s'abritent de la pluie, 1760, Inde (Rajasthan, Jaipur)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/rain6.jpg" alt='Paysage héroïque avec arc-en-ciel, 1824, Joseph Anton Koch (autrichien)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/rain7.jpg" alt='Jeune mari : première magasinage, 1854, Lilly Martin Spencer (américaine)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/rain8.jpg" alt='La tempête, 1880, Pierre-Auguste Cot (français)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/rain9.jpg" alt='Le Christ endormi pendant la tempête, vers 1853, Eugène Delacroix (français)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/rain10.jpg" alt='Vue de Tolède, vers 1599-1600, El Greco (Domenikos Theotokopoulos) (grec)'>
+                    </div>
+                </div>
+
+                <!-- Exhibit Row 2 - Permanent -->
+                <div class="exhibitIMG-row2">
+                    <img class="exhibitcover" src="../images/ExhibitCover8.jpg" alt="Exhibition image pour l'hiver">
+                </div>
+
+                <div class="exhibitTXT-row2">
+                    <h3 class="exH3">L'hiver</h3>
+                    <h4 class="exH4">À propos de cette exposition:</h4>
+                    <p class="exP">L'hiver. Même le mot exerce un effet glaçant, un souvenir d'orteils glacés et de narines gelées. Pour ceux qui apprécient l'air vivifiant de janvier, l'hiver est une occasion d'en profiter. Pour ceux qui préfèrent être confortablement installés sous une couverture avec du chocolat chaud, malheureusement l'hiver est impossible à éviter.</p>
+                     <p class="exP">L'hiver canadien est connu pour être long et sombre. Mais il est aussi connu pour sa beauté, ses chutes de neige pures et ses soirées paisibles. Notre exposition met en lumière le côté artistique de la saison la plus longue, visant sur les couleurs qui se trouvent au-delà de la neige, nous rappelant que même à l'heure la plus sombre, un beau lever de soleil d'hiver n'est que 15 heures plus tard.</p>
+                </div>
+
+                <!-- Thumbnail row 2 - Permanent Collection -->
+                <div class="exTHUMBS-row2">
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/snow1.jpg" alt="Scène d'hiver au clair de lune, 1869, Henry Farrer (américain)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/snow2.jpg" alt="Scène d'hiver, 1892, Seki Shūkō (japonais)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/snow3.jpg" alt="Paysage d'hiver, Hollande, 1833, Barend Cornelis Koekkoek (Néerlandais)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/snow4.jpg" alt='Rue Eugène Moussoir à Moret : hiver 1891, Alfred Sisley (britannique)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/snow5.jpg" alt='École rouge (Scène de campagne), 1858, George Henry Durrie (américain)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/snow6.jpg" alt='Sports sur une rivière gelée, probablement vers 1660, Aert van der Neer (néerlandais)'>
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/snow7.jpg" alt="Un paysage d'hiver avec des patineurs sur glace et un château imaginaire, vers 1615-20, Christoffel van den Berghe (néerlandais)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/snow8.jpg" alt="Scène d'hiver, style de Jan van de Cappelle (néerlandais)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/snow9.jpg" alt="Le boulevard Montmartre un matin d'hiver, 1897, Camille Pissarro (français)">
+                    </div>
+                    <div class="thumbSquare">
+                        <img class="thumb" src="../images/snow10.jpg" alt='Janvier : Cernay, près de Rambouillet, 1875, Léon-Germain Pelouse (français)'>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+     
+        <footer>
+            <div id="about">
+                <h3>Addresse</h3>
+                <p>910 Monaghan Rd <br>
+                    Peterborough, Ontario <br>
+                    K9J 5K4, Canada</p>
+            </div>
+            <div id="hours">
+                <h3>Heures d'ouverture</h3>
+                <p>Lundi au Vendredi 10am - 9pm <br>
+                    Samedi et Dimanche 10am - 5pm</p>
+            </div>
+            <div id="contact">
+                <h3>Nous joindre</h3>
+                <p>(750) 748-9153 <br>
+                    <a href="mailto:namelessArt@nameless.ca">namelessArt@nameless.ca</a>
+                </p>
+            </div>
+            <div id="line-2">
+                <hr>
+            </div>
+            <div id="copyright">
+                <p> &#169; Droit d'auteur The Nameless Museum of Fine Arts. Tous droits réservés </p>
+            </div>
+        </footer>
+    </div>
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01" src="../images/nothing.jpg" alt="an unimportant single pixel image to appease the validator">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div> 
+
+    <script>
+        // Get the collection of thumbnail images 
+        var thumbnails = document.getElementsByClassName('thumb');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        for(var i = 0; i < thumbnails.length; i++) {
+            var img = thumbnails.item(i);
+            img.onclick = loadModal;
+        }
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        
+        var img = document.getElementById("coffee1");
+        
+        function loadModal(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        } 
+    </script>
+
+    <script>
+        // Get the collection of subnav tabs 
+        var tabSet = document.getElementById('exhibit-tabs');
+        var exhibitTabs = tabSet.getElementsByTagName('button');
+    
+        // Set the listener on each tab
+        for(var i = 0; i < exhibitTabs.length; i++) {
+            var selectedTab = exhibitTabs.item(i);
+            selectedTab.onclick = loadExView;
+        }
+
+        // Set variables for the content divs
+        var curEx = document.getElementById('current-exhibits');
+        var upEx = document.getElementById('upcoming-exhibits');
+        var pastEx = document.getElementById('past-exhibits');
+        var permEx = document.getElementById('permanent-collection');
+
+        // Function to change view based on tab click
+        function loadExView(){
+            // Set all tab buttons to not active
+            for(var i = 0; i < exhibitTabs.length; i++) {
+                var selectedTab = exhibitTabs.item(i);
+                selectedTab.parentNode.className = 'exTab';
+            }
+            
+            // Set selected tab to active
+            this.parentNode.className += ' active';
+
+            // Change display settings based on tab selected
+            switch(this.id){
+                case 'tabCurrent': curEx.style.display = "contents";
+                upEx.style.display = "none";
+                pastEx.style.display = "none";
+                permEx.style.display = "none";
+                break;
+                case 'tabUpcoming': upEx.style.display = "contents";
+                curEx.style.display = "none";
+                pastEx.style.display = "none";
+                permEx.style.display = "none";
+                break;
+                case 'tabPast': pastEx.style.display = "contents";
+                upEx.style.display = "none";
+                curEx.style.display = "none";
+                permEx.style.display = "none";
+                break;
+                case 'tabPermanent': permEx.style.display = "contents";
+                upEx.style.display = "none";
+                pastEx.style.display = "none";
+                curEx.style.display = "none";
+                break;       
+        }
+    }    
+        
+    </script>
+</body>
+
+</html>

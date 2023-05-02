@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Propos du Musée Sans Nom">
+    <meta name="author" content="Sara Poquet, Genevieve Moisan-Marmen, William Travis Barfoot">
+    <meta name="keywords" content="A Propos, Musée Sans Nom">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/about.css">
+    <title>À propos du Musée Sans Nom</title>
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 450px 1fr;
+            background-color: antiquewhite;
+        }
+
+        @media only screen and (max-width: 600px) {
+            main {
+                grid-template-rows: 630px 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="accueil.html"><img src="../images/Logo.jpg" alt="NMFA Logo"></a>
+            <nav>
+                <a href="accueil.html">Accueil</a>
+                <a href="votreVisite.html">Planifiez votre visite</a>
+                <a href="exhibitions.html">Exhibitions</a>
+                <a href="devenirMembre.html">Devenez membre</a>
+                <a href="ÀPropos.html">À propos</a>
+            </nav>
+            <button class="buttonHeader" onclick="window.location.href='billeterie.html';">Billets</button>
+            <div id="line-1">
+                <hr>
+            </div>
+
+            <select title="language" name="language" id="language" onchange="location = this.value;">
+                <option selected="selected" value="ÀPropos.html">Fr</option>
+                <option value="../about.html">En</option>
+                
+            </select>
+        </header>
+
+        <main>
+            <div id="bio">
+                <h1>À propos du Musée Sans Nom</h1>
+                <p>
+                    Qu'est-ce que ç'est l'art ? - un sentiment. Rien sur terre ne peut capturer la même émotion
+                    impressionnante qu'un chef-d'œuvre intemporel. C'est dans cet esprit que nous avons nommé notre
+                    musée. Ainsi, au lieu d'essayer d'étiqueter votre expérience, vous êtes libre de simplement en
+                    profiter.
+                </p>
+                <div id="imagewrap">
+                    <img src="../images/Travis/art-venus.gif" alt="La Naissance de Vénus">
+                </div>
+                <p>Le Musée Sans Nom essaie d'inspirer le cœur de ce qui fait de nous des êtres humains. Des émotions
+                    qui échappent à la définition. Qu'il s'agisse de notre galerie permanente ou d'une exposition
+                    itinérante, nous nous efforçons de rendre votre expérience avec nous mémorable.
+                </p>
+                <p>
+                    Nous faisons de notre mieux pour nous assurer que lorsque vous partez, vous ne partez jamais
+                    vraiment et que votre expérience sera quelque chose que vous chérirez pour les années à venir.
+                    Stationnement n'est pas gratuit. </p>
+
+            </div>
+            <div id="permgal">
+                <img src="../images/ExhibitCover7.jpg" alt="">
+
+            </div>
+        </main>
+
+
+        <footer>
+            <div id="about">
+                <h3>Addresse</h3>
+                <p>910 Monaghan Rd <br>
+                    Peterborouugh, Ontario <br>
+                    K9J 5K4, Canada</p>
+            </div>
+            <div id="hours">
+                <h3>Heures d'ouverture</h3>
+                <p>Lundi au Vendredi 10am - 9pm <br>
+                    Samedi et Dimanche 10am - 5pm</p>
+            </div>
+            <div id="contact">
+                <h3>Nous joindre</h3>
+                <p>(750) 748-9153 <br>
+                    <a href="mailto:namelessArt@nameless.ca">namelessArt@nameless.ca</a>
+                </p>
+            </div>
+            <div id="line-2">
+                <hr>
+            </div>
+            <div id="copyright">
+                <p> &#169; Droit d'auteur The Nameless Museum of Fine Arts. Tous droits réservés </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

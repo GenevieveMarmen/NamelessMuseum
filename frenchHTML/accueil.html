@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sara Poquet, Genevieve Moisan-Marmen, William Travis Barefoot">
+    <meta name="keywords" content="musée, arts, Peterborough">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/home.css"> 
+    <title>Accueil</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="accueil.html"><img src="../images/Logo.jpg" alt="NMFA Logo"></a>
+            <nav>
+                <a href="accueil.html">Accueil</a>
+                <a href="votreVisite.html">Planifiez votre visite</a>
+                <a href="exhibitions.html">Exhibitions</a>
+                <a href="devenirMembre.html">Devenez membre</a>
+                <a href="ÀPropos.html">À propos</a>
+            </nav>
+                <button class="buttonHeader" onclick="window.location.href='billeterie.html';">Billets</button>
+            <div id="line-1">
+                <hr>
+            </div>
+            <select title="language" name="language" id="language" onchange="location = this.value;">
+                <option selected="selected" value="accueil.html">Fr</option>
+                <option value="../home.html">En</option>
+                
+            </select>
+        </header>
+
+        <main>
+            <div id="homevideo">
+                <video controls loop autoplay muted width="100%">
+                    <source src="../images/homevideologo.mp4" type="video/mp4">
+                        Votre navigateur ne prend pas en charge les balises vidéo.
+                </video>
+            </div> 
+            
+            <div id="home-this-week-header">
+                <h2>Cette semaine au musée :</h2>
+            </div>
+
+            <div id="thisweek">
+                <figure class="homepage-exhibit-card">
+                    <img class="exhibit-card" src="../images/ExhibitCover1.jpg" alt="L'art du café">
+                    <figcaption class="home-ex-card-text">L'art du café<br>
+                        Jusqu'au 19 décembre 2022</figcaption>
+                </figure>
+                
+                <figure class="homepage-exhibit-card">
+                    <img class="exhibit-card" src="../images/ExhibitCover2.jpg" alt="Des fruits et des fleurs : une rétrospective">
+                    <figcaption class="home-ex-card-text">Des fruits et des fleurs : une rétrospective<br>
+                        Jusqu'au 2 juillet 2023</figcaption>
+                    </figure>
+                
+                <figure class="homepage-exhibit-card">
+                    <img class="exhibit-card" src="../images/ExhibitCover7.jpg" alt="Rain">
+                    <figcaption class="home-ex-card-text">La pluie : la collection permanente</figcaption>
+                </figure>
+            </div>
+
+            <div class="home-ex-link">
+                <button id="all-exhibits" onclick="window.location.href='exhibitions.html'">Voir toutes les exhibitions...</button>
+            </div>
+        </main>
+
+     
+        <footer>
+            <div id="about">
+                <h3>Addresse</h3>
+                <p>910 Monaghan Rd <br>
+                    Peterborough, Ontario <br>
+                    K9J 5K4, Canada</p>
+            </div>
+            <div id="hours">
+                <h3>Heures d'ouverture</h3>
+                <p>Lundi au Vendredi 10am - 9pm <br>
+                    Samedi et Dimanche 10am - 5pm</p>
+            </div>
+            <div id="contact">
+                <h3>Nous joindre</h3>
+                <p>(750) 748-9153 <br>
+                    <a href="mailto:namelessArt@nameless.ca">namelessArt@nameless.ca</a>
+                </p>
+            </div>
+            <div id="line-2">
+                <hr>
+            </div>
+            <div id="copyright">
+                <p> &#169; Droit d'auteur The Nameless Museum of Fine Arts. Tous droits réservés </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

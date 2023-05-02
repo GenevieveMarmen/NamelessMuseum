@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Planifiez Votre Visite au Musée Sans Nom">
+    <meta name="author" content="Sara Poquet, Genevieve Moisan-Marmen, William Travis Barfoot">
+    <meta name="keywords" content="visite, Musée Sans Nom">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+    <title>Planifiez Votre Visite!</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/visit.css">
+
+    <style>
+        @media only screen and (max-width: 600px) {
+            #textwrapper {
+                background-color: hsl(0deg 0% 100% / 63%);
+                min-height: 70%;
+                border-radius: 7px;
+                padding: 10px;
+                border: solid 3px black;
+                font-size: 15px;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="accueil.html"><img src="../images/Logo.jpg" alt="NMFA Logo"></a>
+            <nav>
+                <a href="accueil.html">Accueil</a>
+                <a href="votreVisite.html">Planifiez votre visite</a>
+                <a href="exhibitions.html">Exhibitions</a>
+                <a href="devenirMembre.html">Devenez membre</a>
+                <a href="ÀPropos.html">À propos</a>
+            </nav>
+            <button class="buttonHeader" onclick="window.location.href='billeterie.html';">Billets</button>
+            <div id="line-1">
+                <hr>
+            </div>
+
+            <select title="language" name="language" id="language" onchange="location = this.value;">
+                <option selected="selected" value="votreVisite.html">Fr</option>
+                <option value="../planYourVisit.html">En</option>
+                
+            </select>
+        </header>
+
+
+        <main>
+            <div id="text">
+                <div id="textwrapper">
+                    <h1>Planifiez votre visite!</h1>
+                    <p>Nous serions ravis de vous avoir comme invité! Vous trouverez notre emplacement
+                        sur la carte. Les heures d'ouverture sont juste en dessous.
+                        Vous avez encore une question ? Aucun problème! Envoyez un e-mail à John pour une réponse
+                        rapide!</p>
+                </div>
+            </div>
+            <div id="gmaps">
+                <iframe title="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2856.0693396053352!2d-78.33253518509535!3d44.28796281917114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d58d025703f8e7%3A0x32da16f55af9d676!2sThe%20Canadian%20Canoe%20Museum!5e0!3m2!1sen!2sca!4v1670455696747!5m2!1sen!2sca"
+                    height="300" style="border:solid 3px; border-radius:20px;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="ophours">
+                <h2>Heures d'ouverture</h2>
+                <ul style="list-style-type: none;">
+                    <li><b>Lundi</b></li>
+                    <li>
+                        <ul>
+                            <li>10:00 - 21:00</li>
+                        </ul>
+                    </li>
+
+                    <li><b>Mardi</b></li>
+                    <li>
+                        <ul>
+                            <li>10:00 - 21:00</li>
+                        </ul>
+                    </li>
+                    <li><b>Mercredi</b></li>
+                    <li>
+                        <ul>
+                            <li>10:00 - 21:00</li>
+                        </ul>
+                    </li>
+                    <li><b>Jeudi</b></li>
+                    <li>
+                        <ul>
+                            <li>10:00 - 21:00</li>
+                        </ul>
+                    </li>
+                    <li><b>Vendredi</b></li>
+                    <li>
+                        <ul>
+                            <li>10:00 - 21:00</li>
+                        </ul>
+                    </li>
+                    <li><b>Samedi</b></li>
+                    <li>
+                        <ul>
+                            <li>10:00 - 17:00</li>
+                        </ul>
+                    </li>
+                    <li><b>Dimanche</b></li>
+                    <li>
+                        <ul>
+                            <li>10:00 - 17:00</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="contactus">
+                <h2>Vous avez encore des questions ?</h2>
+                <p>Pour toute question supplémentaire, veuillez contacter John nuit ou jour.
+                    Il est toujours prêt à répondre</p>
+
+                <address>
+                    Contactez-nous par e-mail <a href="mailto:namelessArt@nameless.ca">John Smith</a>.<br>
+                    Ou:<br>
+                    Nameless Museum<br>
+                    910 Monaghan Rd<br>
+                    Peterborouugh, K9J 5K4<br>
+                    Ontario, Canada
+                </address>
+
+            </div>
+
+            <div id="funded">
+                <form action="https://www.canada.ca/en/canadian-heritage/services/funding/museums-assistance.html"
+                    target="_blank">
+                    <input type="submit" value="Soutenu par : Museum Assistance Canada. Visitez-les ici!" >
+                </form>
+            </div>
+            <div id="videowrapper">
+
+                <video id="thevideo" autoplay muted loop>
+                    <source src="../images/Travis/video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </main>
+
+        <footer>
+            <div id="about">
+                <h3>Addresse</h3>
+                <p>910 Monaghan Rd <br>
+                    Peterborouugh, Ontario <br>
+                    K9J 5K4, Canada</p>
+            </div>
+            <div id="hours">
+                <h3>Heures d'ouverture</h3>
+                <p>Lundi au Vendredi 10am - 9pm <br>
+                    Samedi et Dimanche 10am - 5pm</p>
+            </div>
+            <div id="contact">
+                <h3>Nous joindre</h3>
+                <p>(750) 748-9153 <br>
+                    <a href="mailto:namelessArt@nameless.ca">namelessArt@nameless.ca</a>
+                </p>
+            </div>
+            <div id="line-2">
+                <hr>
+            </div>
+            <div id="copyright">
+                <p> &#169; Droit d'auteur The Nameless Museum of Fine Arts. Tous droits réservés </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
